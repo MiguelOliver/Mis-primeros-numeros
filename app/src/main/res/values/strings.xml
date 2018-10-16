@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mis Primeros Numeros</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6074349046263907/4725761478</string>
+    <string name="intersticial_ad_unit_id">ca-app-pub-6074349046263907/6202494673</string>
+
+</resources>

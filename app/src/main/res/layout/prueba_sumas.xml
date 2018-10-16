@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/fondo_app"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/superior"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/volver"
+            android:background="@mipmap/flecha_izquierda"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/check"
+            android:background="@mipmap/check"
+            android:layout_weight="0.07"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:id="@+id/ok"
+            android:textSize="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.06"
+            android:typeface="monospace" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/uncheck"
+            android:background="@mipmap/uncheck"
+            android:layout_weight="0.09"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:id="@+id/ko"
+            android:textSize="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="0.06"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="90"
+            android:id="@+id/contador"
+            android:textSize="45dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1"
+        android:id="@+id/operacion">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numero1"
+            android:layout_marginLeft="52.5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:id="@+id/suma"
+            android:background="@mipmap/num_mas"
+            android:layout_weight="0.08" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numero2"
+            android:layout_weight="0.08"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:id="@+id/igual"
+            android:background="@mipmap/igual" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/solucion" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/manos">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mano1"
+            android:layout_marginLeft="52.5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mano2"
+            android:layout_marginLeft="52.5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_weight="0.09"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/uno"
+            android:onClick="uno"
+            android:layout_weight="0.13"
+            android:background="@mipmap/boton_01"
+            android:layout_marginLeft="52.5dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/dos"
+            android:onClick="dos"
+            android:layout_weight="0.13"
+            android:background="@mipmap/boton_02"
+            android:layout_marginLeft="35dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tres"
+            android:onClick="tres"
+            android:layout_weight="0.13"
+            android:background="@mipmap/boton_03"
+            android:layout_marginLeft="35dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:weightSum="1"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cuatro"
+            android:onClick="cuatro"
+            android:layout_weight="0.13"
+            android:background="@mipmap/boton_04"
+            android:layout_marginLeft="52.5dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/cinco"
+            android:onClick="cinco"
+            android:layout_weight="0.13"
+            android:background="@mipmap/boton_05"
+            android:layout_marginLeft="35dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/seis"
+            android:onClick="seis"
+            android:layout_weight="0.13"
+            android:background="@mipmap/boton_06"
+            android:layout_marginLeft="35dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:weightSum="1"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/siete"
+            android:onClick="siete"
+            android:layout_weight="0.13"
+            android:background="@mipmap/boton_07"
+            android:layout_marginLeft="52.5dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/ocho"
+            android:onClick="ocho"
+            android:layout_weight="0.13"
+            android:background="@mipmap/boton_08"
+            android:layout_marginLeft="35dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/nueve"
+            android:onClick="nueve"
+            android:layout_weight="0.13"
+            android:background="@mipmap/boton_09"
+            android:layout_marginLeft="35dp" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_marginTop="75dp"
+        android:layout_weight="0.04" />
+
+</LinearLayout>
